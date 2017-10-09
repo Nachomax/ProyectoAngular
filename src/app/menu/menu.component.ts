@@ -12,4 +12,11 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  isAdmin(){
+    return true;
+  }
+
+
+
 }

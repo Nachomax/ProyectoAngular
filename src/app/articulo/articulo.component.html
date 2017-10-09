@@ -1,0 +1,30 @@
+
+<div class="container" style="margin-top:-200px">
+      <div class="row">
+ <div class="col-md-9"> 
+      <div class="well hidden-xs">   
+        <div class="row">
+          <div class="col-xs-4">
+    <h4>Publicar Artículo</h4>
+    <form>
+      <div class="form-group">
+      <label for="name">Nombre</label>
+<input #name type="text" class="form-control" id="name"><br>
+<label for="precio">Precio</label>
+<input #precio type="text" class="form-control" id="precio"><br>
+<label for="descripcion">Descripcion</label>
+<input #descripcion type="descripcion" class="form-control" id="descripcion"><br>
+<label for="idcat">Id Categoria (cambiar a nombres combobox)</label>
+<input #idcat type="idcat" class="form-control" id="idcat"><br>
+
+</div>
+ 
+      <button type="submit" (click)="altaArt(name.value, precio.value, descripcion.value, idcat.value)" class="btn btn-success">Publicar</button>
+ 
+    </form>
+</div>
+</div>
+</div>
+</div>
+</div>
+

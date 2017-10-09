@@ -1,0 +1,17 @@
+<div class="col-md-6 col-md-offset-3">
+    <h2>Datos</h2>
+    
+          <div *ngIf="datosUser()">
+            <div *ngFor="let f of firstname">
+              Nombre: <span [innerHTML]="f"></span></div>
+              <div *ngFor="let l of lastname">
+              Apellido: <span [innerHTML]="l"></span></div>
+              <div *ngFor="let r of rol">
+              Email: <span [innerHTML]="r"></span></div>
+            </div>
+           <br>
+        
+        <div class="color"> <button [routerLink]="['/login']" (click)="logout()" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-log-out"></span>Logout</button></div>
+
+   
+</div>
